@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    
+    #back1{
+      background: url('1st.jpg');
+     background-size: cover;
+     background-position-x: 40%;
+     background-position-y: 50%;
+    }
+    #back2{
+      background: url('2nd.jpg');
+      background-size: cover;
+      background-position-x: 40%;
+      background-position-y: 50%;
+    }
+    #back3{
+     background: url('3rd.jpg');
+     background-size: cover;
+     background-position-x: 40%;
+     background-position-y: 50%;
+    }
+    #back3{
+      background: url('3rd.jpg');
+     background-size: cover;
+     background-position-x: 40%;
+     background-position-y: 50%;
+    }
+    #back4{
+     background: url('4th.jpg');
+     background-size: cover;
+     background-position-x: 40%;
+     background-position-y: 50%;
+    }
+    #back5{
+      background: url('5th.jpg');
+      background-size: cover;
+      background-position-x: 40%;
+      background-position-y: 50%;
+    }
+    #back6{
+      background: url('6th.jpg');
+      background-size: cover;
+      background-position-x: 40%;
+      background-position-y: 50%;
+    }
+    #back7{
+     background: url('7th.jpg');
+     background-size: cover;
+     background-position-x: 40%;
+     background-position-y: 50%;
+    }
+    #back8{
+     background: url('8th.jpg');
+     background-size: cover;
+     background-position-x: 40%;
+     background-position-y: 50%;
+    }
+    #title{
+      z-index: 5;
+    }
+    #menu{
+      z-index: 5;
+    }
+
+    .view{
+      text-align: center;
+      margin-bottom: 20px;
+      color:rgb(152, 152, 152);
+      font-size: 4vw;
+    }
+
+    
+
+
+    /* Dsktop view */
+    @media screen and (max-width : 2600px){
+      #header{
+        height: 11rem;
+        width: 100vw;
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+      }
+      #title {
+        height: 6rem;
+        position: fixed;
+        top: 3rem;
+        left: 3.3vw;
+        font-size: 4rem;
+      }
+      #menu{
+        height: 5rem;
+        width: 4rem;
+        position: fixed;
+        top: 3rem;
+        right: 3.3vw;        
+        cursor: pointer;
+      }
+      hr{
+        display: block;
+        margin-top: .9rem;
+        border: 3px solid black;
+      }
+      #body2{
+        width: 100vw;       
+        margin-bottom: 5rem;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 4vw;
+        column-gap: 3vw;
+      }
+      .size{
+        height: 350px;
+        width: 29vw;
+      }
+      .hover:hover{
+        background: #f6cd41d2;
+        filter: opacity(70%);
+      }
+      .view::after{
+        font-size: 1.5vw;
+        content: 'Desktop View';
+      }
+    }
+
+
+
+
+    /* Laptop view */
+    @media screen and (max-width : 1450px){
+      #header{
+        height: 8rem;
+        width: 100vw;
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+      }
+      #title {
+        height: 4.2rem;
+        position: fixed;
+        top: 2rem;
+        left: 3.3vw;
+        font-size: 3.5rem;
+      }
+      #menu{
+        height: 4rem;
+        width: 3.5rem;
+        position: fixed;
+        top: 2rem;
+        right: 3.3vw;        
+        cursor: pointer;
+      }
+      hr{
+        display: block;
+        margin-top: 0.8rem;
+        border: 3px solid black;
+      }
+      #body2{
+        width: 100vw;       
+        margin-bottom: 5rem;
+        margin-top: 30px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 3vw;
+        column-gap: 3vw;
+      }
+      .size{
+        height: 400px;
+        width: 45vw;
+      }
+      .hover:hover{
+        background: #f6cd41d2;
+        filter: opacity(70%);
+      }
+      .view::after{
+        font-size: 3vw;
+        content: 'Laptop View';
+      }
+    }
+    
+    
+    /* Tablet view */
+    @media screen and (max-width : 850px){
+      #header{
+        height: 7rem;
+        width: 100vw;
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+      }
+      #title {
+        height: 4.2rem;
+        position: fixed;
+        top: 2rem;
+        left: 2.7vw;
+        font-size: 3.5rem;
+      }
+      #menu{
+        height: 4.2rem;
+        width: 3.8rem;
+        position: fixed;
+        top: 2rem;
+        right: 2.7vw;
+        padding: 7px;       
+        cursor: pointer;
+      }
+      hr{
+        display: block;
+        margin-top: 0.6rem;
+        border: 3px solid black;
+      }
+      #body2{
+        width: 100vw;       
+        margin-bottom: 4rem;
+        margin-top: 30px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 2.7vw;
+      }
+      .size{
+        height: 400px;
+        width: 95vw;
+      }
+      .hover:hover{
+        background: #f6cd41d2;
+        filter: opacity(70%);
+      }
+      .view::after{
+        content: 'Tablet View';
+      }
+    }
+    
+
+    
+    /* Mobile view */
+    @media screen and (max-width : 430px){
+      #header{
+        height: 4rem;
+        width: 95vw;
+        display: flex;
+        padding: 0px .5rem 0px .5rem;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #title {
+        height: 2.2rem;
+        position: fixed;
+        top: 1rem;
+        left: .64rem;
+        font-size: 2rem;
+      }
+      #menu{
+        height: 2.2rem;
+        width: 2rem;
+        position: fixed;
+        top: 1rem;
+        right: .64rem;
+        padding: 4px 0px 0px 0px;
+        cursor: pointer;
+      }
+      hr{
+        display: block;
+        margin-top: 0.30rem;
+        border: 1.6px solid black;
+      }
+      #body2{
+        width: 100vw;
+        margin-bottom: 2rem;
+        margin-top: 20px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: .5rem;
+      }
+      .size{
+        height: 200px;
+        width: 95vw;
+      }
+      .hover:hover{
+        background: #f6cd41d2;
+        filter: opacity(70%);
+      }
+      .view::after{
+        content: 'Mobile View';
+      }
+    }
+    
+    
+    
+</style>
+
+<body>
+    <div id="header">
+        <div id="title">S U S A N T A</div>
+        <div id="menu">
+          <hr>
+          <hr>
+          <hr>
+        </div>
+    </div>
+    
+    <div id="body2">
+      
+        <div class="size" id="back1">
+          <div class="size hover"> </div>          
+        </div>
+        
+        <div class="size" id="back2">
+          <div class="size hover"> </div>          
+        </div>
+        
+        
+        <div class="size" id="back3">
+          <div class="size hover"> </div>          
+        </div>
+        
+        
+        <div class="size" id="back4">
+          <div class="size hover"> </div>          
+        </div>
+        
+        <div class="size" id="back5">
+          <div class="size hover"> </div>          
+        </div>
+        
+        <div class="size" id="back6">
+          <div class="size hover"> </div>          
+        </div>
+        
+        <div class="size" id="back7">
+          <div class="size hover"> </div>          
+        </div>
+        
+        <div class="size" id="back8">
+          <div class="size hover"> </div>          
+        </div>      
+    </div>
+    
+    <p class="view"></p>
+
+</body>
+</html>
